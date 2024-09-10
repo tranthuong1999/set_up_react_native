@@ -5,6 +5,9 @@ import { fetchListAllCategory, fetchListCategory } from '../../redux/slices/cate
 import { Img, Btn, BtnText, TextHeader } from './IntroStyle';
 import { data } from './data';
 import CoursesScreen from '../CoursesScreen';
+// @ts-ignore
+import Icon from 'react-native-vector-icons/FontAwesome6';
+
 
 
 const IntroScreen = () => {
@@ -45,9 +48,20 @@ const IntroScreen = () => {
                         </Text>
                     )}
                     {item.items.map((subItem, subIndex) => (
-                        <Text style={styles.item} key={subIndex}>
-                            {subItem}
-                        </Text>
+                        <View style={styles.item} key={subIndex}>
+                            <View>
+                                <Icon
+                                    name="check"
+                                    size={13}
+                                    color="#fff"
+                                />
+                            </View>
+                            <View style={{ marginLeft: 8 }}>
+                                <Text style={{ color:"#fff"}}>
+                                    {subItem}
+                                </Text>
+                            </View>
+                        </View>
                     ))}
                 </View>
             ))}
@@ -108,10 +122,13 @@ const styles = StyleSheet.create({
         fontWeight: "300"
     },
     item: {
+        display: 'flex',
+        flexDirection: "row",
+        alignItems: "flex-start",
         marginBottom: 10,
         color: "#fff",
         fontSize: 12,
-        fontWeight: '400'
+        fontWeight: '400',
     },
     block_4: {},
     title_course: {

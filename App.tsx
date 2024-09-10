@@ -28,10 +28,16 @@ function App() {
   return (
     <Provider store={store}>
       <NavigationContainer>
-        <Stack.Navigator>
+        <SafeAreaView >
+          <View>
+            <AppBar />
+            <IntroScreen />
+          </View>
+        </SafeAreaView>
+        {/* <Stack.Navigator>
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="Detail" component={IntroScreen} />
-        </Stack.Navigator>
+        </Stack.Navigator> */}
       </NavigationContainer>
       {/* <SafeAreaView >
       <View>
