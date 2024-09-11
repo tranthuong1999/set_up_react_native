@@ -11,7 +11,7 @@ interface CategoryState {
     listCourse: any,
     listCourseByCategory: [],
     currentCategory: category | null,
-    listAllCourse: [],
+    listAllCourse: any[],
     detailCourse: any
 }
 

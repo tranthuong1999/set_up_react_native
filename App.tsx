@@ -12,18 +12,19 @@ import AppBar from './src/components/AppBar';
 import IntroScreen from './src/components/IntroScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+// import { GestureHandlerRootView } from 'react-native-gesture-handler';
+// import { enableExperimentalWebImplementation } from 'react-native-gesture-handler';
 
+// enableExperimentalWebImplementation(true);
 const Stack = createNativeStackNavigator();
-
-function HomeScreen() {
-  return (
-    <View>
-      <AppBar />
-      <IntroScreen />
-    </View>
-  );
-}
-
+// function HomeScreen() {
+//   return (
+//     <View>
+//       <AppBar />
+//       <IntroScreen />
+//     </View>
+//   );
+// }
 function App() {
   return (
     <Provider store={store}>

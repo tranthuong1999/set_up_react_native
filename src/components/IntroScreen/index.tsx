@@ -7,6 +7,8 @@ import { data } from './data';
 import CoursesScreen from '../CoursesScreen';
 // @ts-ignore
 import Icon from 'react-native-vector-icons/FontAwesome6';
+import MemberScreen from '../Member';
+import FooterScreen from '../Footer';
 
 
 
@@ -57,7 +59,7 @@ const IntroScreen = () => {
                                 />
                             </View>
                             <View style={{ marginLeft: 8 }}>
-                                <Text style={{ color:"#fff"}}>
+                                <Text style={{ color: "#fff" }}>
                                     {subItem}
                                 </Text>
                             </View>
@@ -69,7 +71,13 @@ const IntroScreen = () => {
             <View>
                 <Text style={styles.title_course}> Khoá học phổ biến</Text>
             </View>
-            <CoursesScreen data={listAllCourse.slice(0, 5)} />
+            <CoursesScreen data={listAllCourse.slice(0, 5)} isReference={true} />
+            <View>
+                <Text style={[styles.title_course, styles.title_reference]}>Khóa học tham khảo</Text>
+            </View>
+            <CoursesScreen data={listAllCourse.slice(6, 10)} isReference={false} />
+            <MemberScreen />
+            <FooterScreen />
         </ScrollView>
     )
 }
@@ -136,7 +144,11 @@ const styles = StyleSheet.create({
         fontWeight: "600",
         color: "#f6ba35",
         paddingBottom: 10,
-        paddingTop: 10
+        paddingTop: 10,
+        fontSize: 18
+    },
+    title_reference: {
+        color: "#000"
     }
 })
 

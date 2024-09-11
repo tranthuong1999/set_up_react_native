@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 
 export const Img = styled.Image`
   height: 200px;
-  object-fit: fill;
+  object-fit: fill ;
   border-radius: 8px;
 `;
 
@@ -43,9 +43,8 @@ border-bottom-right-radius: 4px;
 
 export const TextDesc = styled.Text`
 font-size: 16px;
-font-weight: 500;
+font-weight: bold;
 color: black;
-padding: 20px;
 `;
 export const CardDesc = styled.View`
 display: flex;
