@@ -1,11 +1,7 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { data } from "./data";
-// @ts-ignore
-import { CountUp } from 'use-count-up'
-import AnimatedNumbers from 'react-native-animated-numbers';
-
 
 const MemberScreen = () => {
     return (
@@ -38,7 +34,6 @@ const styles = StyleSheet.create({
     member_screen: {
         paddingLeft: 20,
         paddingRight: 20,
-        marginBottom: 20,
         backgroundColor: "#f0f8ff"
     },
     img_logo: {

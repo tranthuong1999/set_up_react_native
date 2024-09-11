@@ -9,6 +9,7 @@ import CoursesScreen from '../CoursesScreen';
 import Icon from 'react-native-vector-icons/FontAwesome6';
 import MemberScreen from '../Member';
 import FooterScreen from '../Footer';
+import IntructorScreen from '../Intructor';
 
 
 
@@ -77,6 +78,7 @@ const IntroScreen = () => {
             </View>
             <CoursesScreen data={listAllCourse.slice(6, 10)} isReference={false} />
             <MemberScreen />
+            <IntructorScreen />
             <FooterScreen />
         </ScrollView>
     )
