@@ -4,9 +4,11 @@ import React from 'react'
 export default function AppBar() {
   return (
     <View>
-      <Text>AppBar</Text>
+      <Text>AppBar Updatechichi</Text>
     </View>
   )
 }
 
 const styles = StyleSheet.create({})
+
+// react-native-reanimated-carousel
