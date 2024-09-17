@@ -4,6 +4,8 @@ import Icon from 'react-native-vector-icons/FontAwesome6';
 import IconFont from 'react-native-vector-icons/FontAwesome';
 import IconEntypo from 'react-native-vector-icons/Entypo';
 import IconAntd from 'react-native-vector-icons/AntDesign';
+import { Platform } from 'react-native';
+
 
 
 export default function FooterScreen() {
@@ -122,9 +124,7 @@ export default function FooterScreen() {
                 <View style={[styles.block_2_child_1]}>
                     <IconAntd name="twitter" size={13} color="#fff" />
                 </View>
-
             </View>
-
         </View>
     )
 }
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
         paddingLeft: 20,
         paddingRight: 20,
         backgroundColor: "#f0f8ff",
-        marginBottom: 40
+        // backgroundColor: Platform.OS === 'android' ? "red" : "green",
     },
     footer_block_1: {
         flexDirection: "row",

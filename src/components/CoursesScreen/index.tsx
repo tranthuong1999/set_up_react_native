@@ -2,9 +2,7 @@
 import { StyleSheet, Text, View, Image } from 'react-native';
 import React from 'react';
 import { CardBody, CardBotom, CardDesc, Img, ItemCourse, ListCourse, TextDesc, TitleCourse } from './CourseStyle';
-// @ts-ignore
 import Icon from 'react-native-vector-icons/AntDesign';
-// @ts-ignore
 import IconFont from "react-native-vector-icons/FontAwesome"
 
 export default function CoursesScreen(props: { data: any[], isReference?: boolean }) {

@@ -5,13 +5,10 @@ import { fetchListAllCategory, fetchListCategory } from '../../redux/slices/cate
 import { Img, Btn, BtnText, TextHeader } from './IntroStyle';
 import { data } from './data';
 import CoursesScreen from '../CoursesScreen';
-// @ts-ignore
 import Icon from 'react-native-vector-icons/FontAwesome6';
 import MemberScreen from '../Member';
 import FooterScreen from '../Footer';
 import IntructorScreen from '../Intructor';
-
-
 
 const IntroScreen = () => {
     const { listAllCourse } = useAppSelector((state) => state.categoryReducer);
